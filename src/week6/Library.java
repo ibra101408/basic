@@ -30,6 +30,33 @@ public class Library {
 
         return found;
     }
+
+    public ArrayList<Book> searchByTitle(String title) {
+        ArrayList<Book> found = new ArrayList<Book>();
+
+        for(Book book : this.books){
+            if(StringUtils.included(book.title(), title)) {
+
+                found.add(book);
+            }
+        }
+
+        return found;
+    }
+
+   /* public ArrayList<Book> searchByYear(int year) {
+        ArrayList<Book> found = new ArrayList<Book>();
+
+        for(Book book : this.books){
+            if(book.year().contains(year)){
+                found.add(book);
+            }
+        }
+
+        return found;
+    }*/
+
+
 }
 
 

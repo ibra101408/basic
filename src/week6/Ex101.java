@@ -12,10 +12,15 @@ public class Ex101 {
         Library.addBook(new Book("NHL Hockey", "Stanley Kupp", 1952));
         Library.addBook(new Book("Battle Axes", "Tom A. Hawk", 1851));
 
-        /*ArrayList<Book> result = Library.searchByTitle("Cheese");
+        for (Book book: Library.searchByTitle("CHEESE")) {
+            System.out.println(book);
+        }
+
+        ArrayList<Book> result = Library.searchByTitle("Cheese");
         for (Book book: result) {
             System.out.println(book);
-        }*/
+        }
+
         System.out.println("---");
         for (Book book: Library.searchByPublisher("Penguin Group  ")) {
             System.out.println(book);
