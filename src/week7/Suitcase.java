@@ -6,7 +6,9 @@ public class Suitcase {
 
     private ArrayList<Thing> things;
     private int weightLimit;
-
+    public ArrayList<Thing> getThings() {
+        return things;
+    }
     public Suitcase(int weightLimit) {
         this.weightLimit = weightLimit;
         this.things = new ArrayList<Thing>();
