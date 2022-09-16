@@ -26,13 +26,26 @@ public class Suitcase {
 
     @Override
     public String toString() {
-        int weightCurrent = this.totalWeight();
-        if (weightCurrent == 0){
-            return "empty(" + weightCurrent + " kg)";
+        //int weightCurrent = this.totalWeight();
+        String languageControl = "";
+        if (this.things.size() == 0){
+            languageControl = " empty";
+
+            //return "empty(" + weightCurrent + " kg)";
         }
-        String languageControl = (this.things.size()
-        > 1) ? "things" : "thing";
-        return this.things.size() + " " + languageControl + " (" + weightCurrent + ")";
+        else if (this.things.size() == 1){
+            languageControl = " thing";
+        }
+        else {
+            languageControl = this.things.size() + " things";
+        }
+
+        /*String languageControl = (
+                this.things.size()
+                        > 1) ? "things" : "thing";
+
+        return this.things.size() + " " + languageControl + " (" + weightCurrent + ")";*/
+        return languageControl + " (" + this.totalWeight() + "kg)";
     }
 
     public void printThings(){
