@@ -25,7 +25,9 @@ public class Ex9 {
         owners.put(reg1, "Arto");
         owners.put(reg3, "Jürgen");*/
 
+        register.printRegistrationPlate();
 
+        register.printOwners();
 
     }
 
