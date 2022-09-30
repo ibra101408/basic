@@ -14,6 +14,9 @@ public class Hamburger {
         this.breadRollType = breadRollType;
     }
 
+    public Hamburger() {
+    }
+
 
     public String getName() {
         return name;

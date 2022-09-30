@@ -21,6 +21,16 @@ public class Main {
         db.addHamburgerAddition3("Should not do this", 50.53);
         System.out.println("Total Deluxe Burger price is " + db.itemizeHamburger());
 
+        System.out.println();
+
+        HealthyBurger healthyBurger = new HealthyBurger("Bacon", 5.67);
+        healthyBurger.addHamburgerAddition1("Egg", 5.43);
+        healthyBurger.addHealthyAddition1("Lentils", 3.41);
+        System.out.println(healthyBurger);
+
+        System.out.println("Total Healthy Burger price is  " + healthyBurger.itemizeHamburger());
+
+
 
 
 
